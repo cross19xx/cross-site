@@ -332,9 +332,9 @@ template {
     }
 }
 
-@media screen and (min-width: 85rem) {
+@media screen and (min-width: 75rem) {
     .grid--padded {
-        width: 85rem;
+        width: 75rem;
     }
 }
 
