@@ -82,3 +82,135 @@
 }
 /*#endregion*/
 /*#endregion*/
+
+/*#region About */
+.about {
+    margin-top: -15px;
+}
+
+.about__inner {
+    padding: 7.5rem 1rem 12.5rem;
+    background-color: #2196f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about__text {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 54rem;
+    color: #ffffff;
+    font-family: 'Roboto-Light', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+        'Ubuntu', sans-serif;
+}
+
+.about__breakdowns {
+    margin: -10rem 1rem 10rem;
+    border-radius: 0.5rem;
+    min-height: 40rem;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}
+
+.about__breakdown {
+    width: 100%;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__breakdown-img {
+    height: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.about__breakdown-title {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about__breakdown-desc {
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about__breakdown-subtitle {
+    color: #2196f3;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about__breakdown-subdesc {
+    margin-bottom: 4rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about__breakdown-list {
+    list-style: none;
+}
+
+.about__breakdown-elem {
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 64rem) {
+    .about__breakdowns.grid {
+        width: calc(100% - 2rem);
+    }
+
+    .about__breakdown {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .about__breakdown:last-of-type {
+        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .about__inner {
+        padding-bottom: 20rem;
+    }
+
+    .about__title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about__text {
+        font-size: 1.25rem;
+    }
+
+    .about__breakdown {
+        width: calc(100% / 3);
+        border-right: 1px solid #dddddd;
+    }
+
+    .about__breakdown:last-of-type {
+        border-right: none;
+    }
+}
+/*#endregion*/
