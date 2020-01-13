@@ -117,7 +117,7 @@
 }
 
 .about__breakdowns {
-    margin: -10rem 1rem 10rem;
+    margin: -10rem 1rem 5rem;
     border-radius: 0.5rem;
     min-height: 40rem;
     background-color: #ffffff;
@@ -213,4 +213,133 @@
         border-right: none;
     }
 }
+/*#endregion*/
+
+/*#region Works */
+.works {
+    background-color: #ecf0f9;
+    padding: 5rem 0 3.5rem;
+}
+
+.works__title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.works__subtext {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.works__subtext-email {
+    color: #2196f3;
+}
+
+.works__subtext-email:hover {
+    text-decoration: underline;
+}
+
+.works__container {
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 64rem) {
+    .works__subtext {
+        margin-bottom: 5rem;
+    }
+}
+
+/*#region Works -> Work */
+.work {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    perspective: 1000px;
+    position: relative;
+}
+
+.work:last-of-type {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 64rem) {
+    .work {
+        width: calc((100% / 3) - 1rem);
+    }
+
+    .work:nth-of-type(3n + 1) {
+        margin-right: 1rem;
+    }
+
+    .work:nth-of-type(3n + 2) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .work:nth-of-type(3n) {
+        margin-left: 1rem;
+    }
+}
+
+.work__front,
+.work__back {
+    display: flex;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+    transition: ease-in-out 500ms;
+}
+
+.work__front {
+    color: #ffffff;
+}
+
+.work__front:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    border-radius: 0.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.work:hover .work__front {
+    transform: rotateY(180deg);
+}
+
+.work__back {
+    background: #fafafa;
+    transform: rotateY(-180deg);
+    padding: 0 2em;
+    line-height: 1.4;
+}
+
+.work:hover .work__back {
+    transform: rotateY(0deg);
+}
+
+.work__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/*#endregion*/
 /*#endregion*/
