@@ -348,7 +348,7 @@
 /*#region Contact */
 .contact {
     padding-top: 5rem;
-    padding-bottom: 10rem; /* Allow leeway for the padding */
+    padding-bottom: 5rem;
 }
 
 .contact__title {
@@ -440,5 +440,61 @@
     .contact-form__container--textarea {
         width: calc(100% - 2rem);
     }
+}
+/*#endregion*/
+
+/*#region Footer */
+.footer {
+    background-color: #2196f3;
+    padding: 7.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__quote {
+    line-height: 1.4;
+    font-size: 1.25rem;
+    max-width: 40rem;
+    text-align: center;
+    font-family: 'Roboto-Light', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+        'Ubuntu', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer__social-btn {
+    color: #ffffff;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    transition: 175ms ease;
+}
+
+.footer__social-btn:hover {
+    background-color: #ffffff;
+    color: #2196f3;
+}
+
+.footer__copyright {
+    font-family: 'Roboto-Light', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+        'Ubuntu', sans-serif;
+    color: #ffffff;
 }
 /*#endregion*/
