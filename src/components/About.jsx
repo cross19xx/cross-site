@@ -96,10 +96,10 @@ const About = () => {
 
                 <p className="about__text">{description}</p>
 
-                <button type="button" className="about__cv">
+                <a href="/Kenneth-Kwakye-Gyamfi-resume.pdf" download="" className="about__cv">
                     Download my CV &nbsp;
                     <i className="ti-file" />
-                </button>
+                </a>
             </div>
 
             <div className="about__breakdowns grid grid--padded">{renderBreakdowns()}</div>
