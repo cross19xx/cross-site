@@ -230,6 +230,7 @@
     text-align: center;
     line-height: 1.5;
     margin-bottom: 2.5rem;
+    padding: 0 1rem;
 }
 
 .works__subtext-email {
@@ -485,12 +486,20 @@
 
 .footer__social-btn {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: 1px solid #ffffff;
-    padding: 1rem;
-    margin: 0 1rem;
+    padding: 0.75rem;
+    margin: 0 0.5rem;
     border-radius: 50%;
     transition: 175ms ease;
+}
+
+@media screen and (min-width: 64rem) {
+    .footer__social-btn {
+        font-size: 1rem;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
 }
 
 .footer__social-btn:hover {
