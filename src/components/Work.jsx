@@ -11,6 +11,19 @@ export default function Work(props) {
             <div className="work__inner">
                 <p className="work__name">{props.name}</p>
                 <p className="work__desc">{props.description}</p>
+
+                <div className="work__links">
+                    {props.links.map(link => (
+                        <a
+                            href={link.url}
+                            key={link.url}
+                            className="work__link"
+                            target="_blank"
+                            rel="noreferrer noopener">
+                            <i className={`work__link-icon ${link.icon}`}></i>
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     );
@@ -26,4 +39,8 @@ Work.propTypes = {
             icon: PropTypes.string
         })
     )
+};
+
+Work.defaultProps = {
+    links: []
 };

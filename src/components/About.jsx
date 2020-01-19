@@ -6,7 +6,7 @@ import WebApp from '../img/development.svg';
 
 const About = () => {
     const description =
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tortor sagittis, dignissim enim sed, condimentum ligula. Proin lorem nisl, dignissim laoreet purus in, dignissim aliquam nisl. Vestibulum vitae pellentesque ligula. Mauris mollis commodo nibh, semper fringilla sem aliquet sed. Sed molestie, urna vitae pharetra vehicula, dui tellus placerat eros, in dapibus elit erat at orci. Donec a lobortis ex, sit amet dictum ligula.';
+        "I'm a 6'5\" full stack web developer 💪🏽 with a 5-year work experience developing mobile and web applications; and building desktop applications. I currently work for eProcess International, in Accra. I love basketball 🏀 I'm a fan of the Los Angeles Lakers. I am well-adept to developing for formal and non-formal settings.";
 
     const renderBreakdowns = () => {
         const breakdowns = [
@@ -14,7 +14,7 @@ const About = () => {
                 img: Design,
                 title: 'Frontend dev / design',
                 description:
-                    'Aliquam commodo vulputate ex sit amet maximus. Integer at felis quam. Pellentesque at semper nisi.',
+                    'I love to work actively on the user experience portion of a software development lifecycle from wireframe prototyping to frontend development.',
                 subTitle: 'Things I love designing',
                 subDesc: 'Wireframes, websites, prototypes',
                 listTitle: 'Design Tools + Languages',
@@ -22,6 +22,7 @@ const About = () => {
                     'ReactJS',
                     'AngularJS',
                     'Vanilla JS',
+                    'Vue JS',
                     'Adobe Photoshop',
                     'Adobe XD',
                     'Sketch',
@@ -32,15 +33,16 @@ const About = () => {
                 img: WebApp,
                 title: 'Backend development',
                 description:
-                    'Aliquam commodo vulputate ex sit amet maximus. Integer at felis quam. Pellentesque at semper nisi.',
+                    'I also love to get down to the dirty stuff and build APIs; websocket servers; microservice architectures; and generally full-fledged backend apps.',
                 subTitle: 'Things I love building',
-                subDesc: 'Web applications, APIs',
+                subDesc: 'Web applications, APIs, DevOps',
                 listTitle: 'Dev tools + languages',
                 list: [
                     'NodeJS',
                     'GoLang',
                     'PHP',
                     'Python',
+                    'Java',
                     'Google Cloud Platform',
                     'Amazon Web Services',
                     'Database management',
@@ -51,7 +53,7 @@ const About = () => {
                 img: MobileApp,
                 title: 'Mobile app development',
                 description:
-                    'Aliquam commodo vulputate ex sit amet maximus. Integer at felis quam. Pellentesque at semper nisi.',
+                    'I have experience developing not just Native applications but also (depending on the job) develop hybrid applications, fit for both iOS and Android.',
                 subTitle: 'Types I love developing',
                 subDesc: 'Android, iOS, Hybrid apps',
                 listTitle: 'Development tools',
@@ -93,6 +95,11 @@ const About = () => {
                 <h2 className="about__title">Hello, I&apos;m Kenneth. Nice to meet you 👋🏼</h2>
 
                 <p className="about__text">{description}</p>
+
+                <button type="button" className="about__cv">
+                    Download my CV &nbsp;
+                    <i className="ti-file" />
+                </button>
             </div>
 
             <div className="about__breakdowns grid grid--padded">{renderBreakdowns()}</div>

@@ -5,10 +5,10 @@ import Logo from '../img/logo_white.png';
 const Footer = () => {
     const renderQuote = () => {
         const quotes = [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus nulla sit amet augue gravida congue.',
-            'Integer vestibulum ipsum vel dolor lacinia, eget elementum augue aliquet.',
-            'Etiam rhoncus nibh vitae nisl pharetra, at cursus eros facilisis. Pellentesque sed augue orci.',
-            'Fusce elementum laoreet est et viverra. Nullam dapibus est in lorem fringilla, ac maximus quam varius.'
+            "I'm a greater believer in luck, and I find the harder I work the more I have of it.",
+            "I have learned that real angels don't have gossamer white robes and Cherubic skin, they have calloused hands and smell of the days' sweat",
+            'Greatness is sifted through the grind, therefore don’t despise the hard work now for surely it will be worth it in the end.',
+            'A dream doesn’t become reality through magic; it takes sweat, determination and hard work.'
         ];
 
         return quotes[Math.floor(Math.random() * quotes.length)];
