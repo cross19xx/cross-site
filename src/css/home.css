@@ -135,7 +135,6 @@
 .about__breakdowns {
     margin: -10rem 1rem 5rem;
     border-radius: 0.5rem;
-    min-height: 40rem;
     background-color: #ffffff;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
@@ -143,10 +142,11 @@
 .about__breakdown {
     width: 100%;
     padding: 3rem 2.5rem;
+    min-height: 51rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .about__breakdown-img {
@@ -199,6 +199,7 @@
 
     .about__breakdown {
         border-bottom: 1px solid #dddddd;
+        min-height: 0;
     }
 
     .about__breakdown:last-of-type {
@@ -285,6 +286,8 @@
     background-size: cover;
     background-position: center;
     overflow-y: hidden;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+    border-radius: 0.5rem;
 }
 
 .work:last-of-type {
