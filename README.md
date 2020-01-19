@@ -3,6 +3,7 @@
 ![App Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
 ![Gatsby Version](https://img.shields.io/badge/gatsby-2.18.21-purple.svg)
 ![PRs allowed](https://img.shields.io/badge/pull_requests-allowed-teal.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0de80d87-ce1e-40e4-9bbf-ae1c5f24f88a/deploy-status)](https://app.netlify.com/sites/cross19xx/deploys)
 
 Website for Kenneth Kwakye-Gyamfi, built with [GatsbyJS](https://www.gatsbyjs.org) and React and hosted with ♥ at [Netlify](https://www.netlify.com/).
 
