@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Work(props) {
-    return (
-        <div className="work col">
-            <div className="work__front" style={{ backgroundImage: `url(${props.img})` }}>
-                <p className="work__name">{props.name}</p>
-            </div>
+    // Construct a linear gradient over any image included
+    const backgroundImage = `url(${props.img})`;
+    // const backgroundImage = `linear-gradient(135deg, rgba(), rgba(26, 87, 230, 0.5)), url(${props.img})`;
 
-            <div className="work__back">
-                <p className="work__description">{props.description}</p>
+    return (
+        <div className="work col" style={{ backgroundImage }}>
+            <div className="work__inner">
+                <p className="work__name">{props.name}</p>
+                <p className="work__desc">{props.description}</p>
             </div>
         </div>
     );

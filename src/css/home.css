@@ -261,6 +261,11 @@
     height: 15rem;
     perspective: 1000px;
     position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
 }
 
 .work:last-of-type {
@@ -286,63 +291,64 @@
     }
 }
 
-.work__front,
-.work__back {
-    display: flex;
-    border-radius: 0.5rem;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-    transition: ease-in-out 500ms;
-}
-
-.work__front {
-    color: #ffffff;
-}
-
-.work__front:before {
-    position: absolute;
-    display: block;
+.work:before {
     content: '';
+    position: absolute;
+    z-index: 1;
     top: 0;
-    border-radius: 0.5rem;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #1a9be6, #1a57e6);
-    opacity: 0.75;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 155, 230, 0.5);
+    transition: 175ms ease;
 }
 
-.work:hover .work__front {
-    transform: rotateY(180deg);
-}
-
-.work__back {
-    background: #fafafa;
-    transform: rotateY(-180deg);
-    padding: 0 2em;
-    line-height: 1.4;
-}
-
-.work:hover .work__back {
-    transform: rotateY(0deg);
+.work__inner {
+    position: absolute;
+    padding: 1rem;
+    background-color: #ffffff;
+    min-height: 12.5rem;
+    top: 2.5rem;
+    transition: top 225ms linear, background-color 225ms;
+    z-index: 2;
 }
 
 .work__name {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    color: #212121;
+    font-family: 'Roboto-Medium', 'Roboto Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Oxygen', 'Ubuntu', sans-serif;
+    margin-bottom: 1rem;
+    transition: 220ms;
 }
-/*#endregion*/
+
+.work__desc {
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 64rem) {
+    .work__inner {
+        background-color: rgba(0, 0, 0, 0.25);
+        top: 12rem;
+    }
+
+    .work__name {
+        color: #ffffff;
+    }
+
+    .work:hover:before {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .work:hover .work__inner {
+        top: 2.5rem; /* Moved 2.5rem because the heighht of the work__inner is 12.5rem. And this will cover everything */
+        background-color: #ffffff;
+    }
+
+    .work:hover .work__name {
+        color: #212121;
+    }
+}
 /*#endregion*/
 
 /*#region Contact */
