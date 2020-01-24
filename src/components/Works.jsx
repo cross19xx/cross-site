@@ -16,7 +16,11 @@ const Works = () => {
                     'Pollution detection and Air Quality Index calculator. Served as the lead developer on the project.',
                 links: [
                     { url: 'https://yakokoe.herokuapp.com', icon: 'ti-world' },
-                    { url: 'https://www.google.com.gh', icon: 'ti-android' }
+                    {
+                        url:
+                            'https://play.google.com/store/apps/details?id=com.cleanairghana.yakokoe&hl=en',
+                        icon: 'ti-android'
+                    }
                 ]
             },
             {
