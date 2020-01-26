@@ -34,4 +34,4 @@ LICENSE	text eol=lf
 # Due to the file size of the font.css, Github sees the project as a CSS project instead of a
 # JavaScript project.
 # See https://github.com/github/linguist#detectable
-src/css/font.css    linguist-vendored
+src/css/icons.css    linguist-vendored
