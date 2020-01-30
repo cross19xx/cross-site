@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Change this if you want to update the form name in Netlify
+const NETLIFY_FORM_NAME = 'v2 Contact Form';
+
 export default class ContactForm extends React.Component {
     state = {};
 
@@ -9,13 +12,20 @@ export default class ContactForm extends React.Component {
 
     render() {
         return (
-            <form className="contact-form grid" onSubmit={this.submitForm}>
+            <form
+                method="POST"
+                data-netlify="true"
+                name={NETLIFY_FORM_NAME}
+                onSubmit={this.submitForm}
+                className="contact-form grid">
+                <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
+
                 <div className="contact-form__container">
                     <label htmlFor="name" className="contact-form__label">
                         Name
                     </label>
 
-                    <input type="text" id="name" className="contact-form__input" />
+                    <input type="text" id="name" name="name" className="contact-form__input" />
                 </div>
 
                 <div className="contact-form__container">
@@ -23,7 +33,7 @@ export default class ContactForm extends React.Component {
                         E-mail address
                     </label>
 
-                    <input type="email" id="email" className="contact-form__input" />
+                    <input type="email" id="email" name="email" className="contact-form__input" />
                 </div>
 
                 <div className="contact-form__container contact-form__container--textarea">
@@ -31,7 +41,11 @@ export default class ContactForm extends React.Component {
                         Details
                     </label>
 
-                    <textarea className="contact-form__textarea" id="description" />
+                    <textarea
+                        id="description"
+                        name="description"
+                        className="contact-form__textarea"
+                    />
                 </div>
 
                 <button type="submit" className="contact-form__submit">
