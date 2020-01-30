@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Change this if you want to update the form name in Netlify
-const NETLIFY_FORM_NAME = 'v2 Contact Form';
+const NETLIFY_FORM_NAME = 'contact';
 
 export default class ContactForm extends React.Component {
     state = {};
@@ -13,11 +13,12 @@ export default class ContactForm extends React.Component {
     render() {
         return (
             <form
-                method="POST"
+                method="post"
                 data-netlify="true"
                 name={NETLIFY_FORM_NAME}
                 onSubmit={this.submitForm}
-                className="contact-form grid">
+                className="contact-form grid"
+                data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
 
                 <div className="contact-form__container">
